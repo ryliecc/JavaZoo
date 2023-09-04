@@ -1,6 +1,3 @@
-public record Animal() {
-    static int ID;
-    static String name;
-    static String species;
-    static int age;
+public record Animal(int ID, String name, String species, int age) {
+
 }
