@@ -16,5 +16,8 @@ public class Main {
         System.out.println(elephant);
         System.out.println("Fanti equals another Fanti: " + fanti.equals(anotherFanti));
 
+        anotherFanti = anotherFanti.withId(4);
+        System.out.println("Fanti equals another Fanti: " + fanti.equals(anotherFanti));
+
     }
 }
