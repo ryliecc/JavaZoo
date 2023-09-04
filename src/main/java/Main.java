@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
         Owner elephantOwner = new Owner("Michael Meier", 27, "Am Waldweg 3, 09113 Chemnitz");
@@ -18,6 +21,16 @@ public class Main {
 
         anotherFanti = anotherFanti.withId(4);
         System.out.println("Fanti equals another Fanti: " + fanti.equals(anotherFanti));
+
+        List<Animal> allAnimals = new ArrayList<>();
+        allAnimals.add(fanti);
+        allAnimals.add(anotherFanti);
+        allAnimals.add(flipper);
+        allAnimals.add(twinkle);
+
+        Zoo zoo = new Zoo(allAnimals);
+        double amountFoodNeeded = zoo.amountFoodNeeded();
+        System.out.println(amountFoodNeeded);
 
     }
 }
